@@ -29,6 +29,10 @@
             scrollbar-width: none;
         }
 
+        .hidden {
+            display: none !important;
+        }
+
         html {
             scroll-behavior: smooth;
         }
@@ -513,11 +517,6 @@
                                 </div>
                                 <span class="text-[8px] font-bold text-gray-500 uppercase">Scan</span>
                             </button>
-                            <button class="flex flex-col items-center gap-2 p-3 bg-white/5 border border-white/5 rounded-2xl">
-                                <div class="w-10 h-10 rounded-full bg-orange-500/10 text-orange-400 flex items-center justify-center">
-                                    <i data-lucide="file-text" class="w-5 h-5"></i>
-                                </div>
-                                <span class="text-[8px] font-bold text-gray-500 uppercase">Relats</span>
                             </button>
                         </div>
 
@@ -525,50 +524,38 @@
                         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
                             <div class="p-5 rounded-2xl bg-[#0A0A0C] border border-white/5 shadow-xl group hover:border-white/10 transition-all">
                                 <div class="flex justify-between items-start mb-3">
-                                    <div class="text-[10px] text-gray-600 uppercase tracking-widest font-bold">Saldo
-                                        Pendente</div>
-                                    <div class="p-1.5 rounded-lg bg-blue-500/10 text-blue-400"><i data-lucide="wallet"
-                                            class="w-3 h-3"></i></div>
+                                    <div class="text-[10px] text-gray-600 uppercase tracking-widest font-bold">Saldo Pendente</div>
+                                    <div class="p-1.5 rounded-lg bg-blue-500/10 text-blue-400"><i data-lucide="wallet" class="w-3 h-3"></i></div>
                                 </div>
-                                <div class="text-2xl font-oswald text-white">R$ 47.850,00</div>
-                                <div class="mt-2 text-[10px] text-emerald-400 flex items-center gap-1 font-medium"><i
-                                        data-lucide="trending-up" class="w-3 h-3"></i> +12%</div>
+                                <div class="text-2xl font-oswald text-white">R$ 28.150,00</div>
+                                <div class="mt-2 text-[10px] text-emerald-400 flex items-center gap-1 font-medium"><i data-lucide="trending-up" class="w-3 h-3"></i> +12%</div>
                             </div>
-                            <div
-                                class="p-5 rounded-2xl bg-[#0A0A0C] border border-white/5 shadow-xl group hover:border-white/10 transition-all">
+                            <div class="p-5 rounded-2xl bg-[#0A0A0C] border border-white/5 shadow-xl group hover:border-white/10 transition-all">
                                 <div class="flex justify-between items-start mb-3">
-                                    <div class="text-[10px] text-gray-600 uppercase tracking-widest font-bold">A Receber
-                                    </div>
-                                    <div class="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-400"><i
-                                            data-lucide="arrow-down-circle" class="w-3 h-3"></i></div>
+                                    <div class="text-[10px] text-gray-600 uppercase tracking-widest font-bold">A Receber</div>
+                                    <div class="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-400"><i data-lucide="arrow-down-circle" class="w-3 h-3"></i></div>
                                 </div>
-                                <div class="text-2xl font-oswald text-white">R$ 23.400,00</div>
-                                <div class="mt-2 text-[10px] text-gray-500 font-medium">14 lançamentos</div>
+                                <div class="text-2xl font-oswald text-white">R$ 64.320,00</div>
+                                <div class="mt-2 text-[10px] text-gray-500 font-medium">22 lançamentos</div>
                             </div>
-                            <div
-                                class="p-5 rounded-2xl bg-[#0A0A0C] border border-white/5 shadow-xl group hover:border-white/10 transition-all">
+                            <div class="p-5 rounded-2xl bg-[#0A0A0C] border border-white/5 shadow-xl group hover:border-white/10 transition-all">
                                 <div class="flex justify-between items-start mb-3">
-                                    <div class="text-[10px] text-gray-600 uppercase tracking-widest font-bold">A Pagar
-                                    </div>
-                                    <div class="p-1.5 rounded-lg bg-red-500/10 text-red-400"><i
-                                            data-lucide="arrow-up-circle" class="w-3 h-3"></i></div>
+                                    <div class="text-[10px] text-gray-600 uppercase tracking-widest font-bold">A Pagar</div>
+                                    <div class="p-1.5 rounded-lg bg-red-500/10 text-red-400"><i data-lucide="arrow-up-circle" class="w-3 h-3"></i></div>
                                 </div>
-                                <div class="text-2xl font-oswald text-white">R$ 8.320,00</div>
-                                <div class="mt-2 text-[10px] text-red-400 font-medium">8 contas pendentes</div>
+                                <div class="text-2xl font-oswald text-white">R$ 28.150,00</div>
+                                <div class="mt-2 text-[10px] text-red-400 font-medium">15 contas pendentes</div>
                             </div>
-                            <div
-                                class="p-5 rounded-2xl bg-gradient-to-br from-indigo-600 to-indigo-800 border-indigo-400/30 shadow-2xl relative overflow-hidden">
+                            <div class="p-5 rounded-2xl bg-gradient-to-br from-indigo-600 to-indigo-800 border-indigo-400/30 shadow-2xl relative overflow-hidden">
                                 <div class="absolute -right-4 -top-4 w-20 h-20 bg-white/10 rounded-full blur-2xl"></div>
                                 <div class="relative z-10 h-full flex flex-col justify-between">
-                                    <div class="text-[10px] text-indigo-200 uppercase tracking-[0.2em] font-bold">Conta
-                                        VCC Premium</div>
+                                    <div class="text-[10px] text-indigo-200 uppercase tracking-[0.2em] font-bold">Saldo em Contas</div>
                                     <div class="mt-4">
-                                        <div class="text-sm font-mono tracking-widest text-white/80">•••• 4242</div>
-                                        <div class="text-lg font-oswald text-white mt-1">R$ 12.450,00</div>
+                                        <div class="text-sm font-mono tracking-widest text-white/80">•••• 1337</div>
+                                        <div class="text-lg font-oswald text-white mt-1">R$ 156.101,83</div>
                                     </div>
                                     <div class="flex justify-end mt-2">
-                                        <span
-                                            class="text-[8px] bg-white/20 px-2 py-0.5 rounded-full border border-white/10 uppercase font-black text-white/90">Ativo</span>
+                                        <span class="text-[8px] bg-white/20 px-2 py-0.5 rounded-full border border-white/10 uppercase font-black text-white/90">Ativo</span>
                                     </div>
                                 </div>
                             </div>
@@ -711,6 +698,66 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Recent Transactions Section -->
+                        <div class="bg-[#0A0A0C] border border-white/5 rounded-3xl overflow-hidden shadow-2xl mt-8">
+                            <div class="p-6 border-b border-white/5 flex items-center justify-between bg-white/[0.01]">
+                                <h4 class="text-sm font-bold text-white uppercase tracking-tight flex items-center gap-2">
+                                    <i data-lucide="history" class="w-4 h-4 text-blue-500"></i> Últimas Transações
+                                </h4>
+                                <button onclick="switchView('movements')" class="text-[10px] text-gray-500 hover:text-white uppercase font-bold tracking-widest transition-colors">Ver Todas</button>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-left">
+                                    <thead class="bg-white/[0.01]">
+                                        <tr class="border-b border-white/5">
+                                            <th class="px-6 py-4 text-[9px] font-black text-gray-500 uppercase tracking-widest">Data</th>
+                                            <th class="px-6 py-4 text-[9px] font-black text-gray-500 uppercase tracking-widest">Descrição</th>
+                                            <th class="px-6 py-4 text-[9px] font-black text-gray-500 uppercase tracking-widest">Conta</th>
+                                            <th class="px-6 py-4 text-[9px] font-black text-gray-500 uppercase tracking-widest text-right">Valor</th>
+                                            <th class="px-6 py-4 text-[9px] font-black text-gray-500 uppercase tracking-widest text-center">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-white/[0.03]">
+                                        <tr class="hover:bg-white/[0.01] transition-colors group">
+                                            <td class="px-6 py-4 text-[10px] text-gray-400 font-mono">Hoje</td>
+                                            <td class="px-6 py-4"><p class="text-xs text-white uppercase tracking-tight font-medium">Venda de Licença Enterprise</p></td>
+                                            <td class="px-6 py-4 text-[10px] text-gray-500 uppercase font-black">Itaú Corporate</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-emerald-400 text-right">+ R$ 12.500,00</td>
+                                            <td class="px-6 py-4 text-center"><span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-[8px] font-black uppercase tracking-tighter shadow-[0_0_8px_rgba(16,185,129,0.1)]">Recebida</span></td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.01] transition-colors group">
+                                            <td class="px-6 py-4 text-[10px] text-gray-400 font-mono">Hoje</td>
+                                            <td class="px-6 py-4"><p class="text-xs text-white uppercase tracking-tight font-medium">Servidores AWS - Março</p></td>
+                                            <td class="px-6 py-4 text-[10px] text-gray-500 uppercase font-black">Cartão Nubank</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-red-500 text-right">- R$ 2.450,00</td>
+                                            <td class="px-6 py-4 text-center"><span class="px-2 py-0.5 rounded-full bg-red-500/10 text-red-500 border border-red-500/20 text-[8px] font-black uppercase tracking-tighter">Paga</span></td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.01] transition-colors group">
+                                            <td class="px-6 py-4 text-[10px] text-gray-400 font-mono">Ontem</td>
+                                            <td class="px-6 py-4"><p class="text-xs text-white uppercase tracking-tight font-medium">Projeto UI/UX Mobile</p></td>
+                                            <td class="px-6 py-4 text-[10px] text-gray-500 uppercase font-black">Itaú Corporate</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-emerald-400 text-right">+ R$ 4.200,00</td>
+                                            <td class="px-6 py-4 text-center"><span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-[8px] font-black uppercase tracking-tighter">Recebida</span></td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.01] transition-colors group">
+                                            <td class="px-6 py-4 text-[10px] text-gray-400 font-mono">Ontem</td>
+                                            <td class="px-6 py-4"><p class="text-xs text-white uppercase tracking-tight font-medium">Aluguel Escritório</p></td>
+                                            <td class="px-6 py-4 text-[10px] text-gray-500 uppercase font-black">Bradesco PJ</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-red-500 text-right">- R$ 5.600,00</td>
+                                            <td class="px-6 py-4 text-center"><span class="px-2 py-0.5 rounded-full bg-red-500/10 text-red-500 border border-red-500/20 text-[8px] font-black uppercase tracking-tighter">Paga</span></td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.01] transition-colors group">
+                                            <td class="px-6 py-4 text-[10px] text-gray-400 font-mono">11 Mar</td>
+                                            <td class="px-6 py-4"><p class="text-xs text-white uppercase tracking-tight font-medium">Suporte Técnico LogGlobal</p></td>
+                                            <td class="px-6 py-4 text-[10px] text-gray-500 uppercase font-black">Itaú Corporate</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-emerald-400 text-right">+ R$ 1.850,00</td>
+                                            <td class="px-6 py-4 text-center"><span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-[8px] font-black uppercase tracking-tighter">Recebida</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- View: Contas a Pagar -->
@@ -723,7 +770,7 @@
                                         <div class="w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.5)]"></div>
                                         <span class="text-[10px] text-gray-600 uppercase tracking-widest font-bold">Total em Aberto</span>
                                     </div>
-                                    <div class="text-3xl font-oswald text-white">R$ 47.850,00</div>
+                                    <div class="text-3xl font-oswald text-white">R$ 28.150,00</div>
                                 </div>
                             </div>
                             <div class="p-6 rounded-2xl bg-[#0A0A0C] border border-white/5 shadow-xl relative overflow-hidden">
@@ -731,21 +778,21 @@
                                     <div class="w-2 h-2 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.5)]"></div>
                                     <span class="text-[10px] text-gray-600 uppercase tracking-widest font-bold">Vence Hoje</span>
                                 </div>
-                                <div class="text-3xl font-oswald text-orange-400">R$ 1.250,00</div>
+                                <div class="text-3xl font-oswald text-orange-400">R$ 2.100,00</div>
                             </div>
                             <div class="p-6 rounded-2xl bg-red-500/5 border border-red-500/20 shadow-xl relative overflow-hidden">
                                 <div class="flex items-center gap-2 mb-4">
                                     <div class="w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.5)]"></div>
                                     <span class="text-[10px] text-red-400/60 uppercase tracking-widest font-bold">Atrasadas</span>
                                 </div>
-                                <div class="text-3xl font-oswald text-red-500">R$ 3.420,00</div>
+                                <div class="text-3xl font-oswald text-red-500">R$ 4.500,00</div>
                             </div>
                             <div class="p-6 rounded-2xl bg-[#0A0A0C] border border-white/5 shadow-xl relative overflow-hidden">
                                 <div class="flex items-center gap-2 mb-4">
                                     <div class="w-2 h-2 rounded-full bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.5)]"></div>
                                     <span class="text-[10px] text-gray-600 uppercase tracking-widest font-bold">Próximos 7 dias</span>
                                 </div>
-                                <div class="text-3xl font-oswald text-indigo-400">R$ 8.900,00</div>
+                                <div class="text-3xl font-oswald text-indigo-400">R$ 8.550,00</div>
                             </div>
                         </div>
 
@@ -783,17 +830,66 @@
                                     </thead>
                                     <tbody class="divide-y divide-white/[0.03]">
                                         <tr class="hover:bg-white/[0.02] transition-colors group">
-                                            <td class="px-6 py-4">
-                                                <span class="px-2 py-0.5 rounded-full bg-red-500/10 text-red-500 border border-red-500/20 text-[9px] font-black uppercase tracking-tighter">Atrasado</span>
-                                            </td>
-                                            <td class="px-6 py-4 text-xs text-gray-300 font-mono">15/03/2026</td>
-                                            <td class="px-6 py-4 text-xs text-white font-medium">Fornecimento de Insumos Abril</td>
-                                            <td class="px-6 py-4 text-xs text-gray-400">Distribuidora Aliança</td>
-                                            <td class="px-6 py-4 text-sm font-oswald text-white text-right">R$ 1.450,00</td>
+                                            <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-red-500/10 text-red-500 border border-red-500/20 text-[9px] font-black uppercase tracking-tighter">Atrasado</span></td>
+                                            <td class="px-6 py-4 text-xs text-gray-300 font-mono">10/03/2026</td>
+                                            <td class="px-6 py-4 text-xs text-white font-medium">Aluguel Escritório</td>
+                                            <td class="px-6 py-4 text-xs text-gray-400">Imobiliária Silva</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-white text-right">R$ 4.500,00</td>
                                             <td class="px-6 py-4 text-right">
                                                 <div class="flex items-center justify-end gap-2 opacity-40 group-hover:opacity-100 transition-opacity">
                                                     <button class="p-1.5 rounded-lg bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10"><i data-lucide="edit-3" class="w-3.5 h-3.5"></i></button>
                                                     <button class="p-1.5 rounded-lg bg-red-500/10 text-red-400 border border-red-500/20 hover:bg-red-500/20"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/20 text-[9px] font-black uppercase tracking-tighter">Vence Hoje</span></td>
+                                            <td class="px-6 py-4 text-xs text-gray-300 font-mono">13/03/2026</td>
+                                            <td class="px-6 py-4 text-xs text-white font-medium">Energia Elétrica</td>
+                                            <td class="px-6 py-4 text-xs text-gray-400">Equatorial</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-white text-right">R$ 2.100,00</td>
+                                            <td class="px-6 py-4 text-right">
+                                                <div class="flex items-center justify-end gap-2 opacity-40 group-hover:opacity-100 transition-opacity">
+                                                    <button class="p-1.5 rounded-lg bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10"><i data-lucide="edit-3" class="w-3.5 h-3.5"></i></button>
+                                                    <button class="p-1.5 rounded-lg bg-red-500/10 text-red-400 border border-red-500/20 hover:bg-red-500/20"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20 text-[9px] font-black uppercase tracking-tighter">Pendente</span></td>
+                                            <td class="px-6 py-4 text-xs text-gray-300 font-mono">15/03/2026</td>
+                                            <td class="px-6 py-4 text-xs text-white font-medium">Folha de Pagamento</td>
+                                            <td class="px-6 py-4 text-xs text-gray-400">Colaboradores</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-white text-right">R$ 8.550,00</td>
+                                            <td class="px-6 py-4 text-right">
+                                                <div class="flex items-center justify-end gap-2 opacity-40 group-hover:opacity-100 transition-opacity">
+                                                    <button class="p-1.5 rounded-lg bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10"><i data-lucide="edit-3" class="w-3.5 h-3.5"></i></button>
+                                                    <button class="p-1.5 rounded-lg bg-red-500/10 text-red-400 border border-red-500/20 hover:bg-red-500/20"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20 text-[9px] font-black uppercase tracking-tighter">Pendente</span></td>
+                                            <td class="px-6 py-4 text-xs text-gray-300 font-mono">20/03/2026</td>
+                                            <td class="px-6 py-4 text-xs text-white font-medium">Internet Fibra</td>
+                                            <td class="px-6 py-4 text-xs text-gray-400">Vivo Empresas</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-white text-right">R$ 1.500,00</td>
+                                            <td class="px-6 py-4 text-right">
+                                                <div class="flex items-center justify-end gap-2 opacity-40 group-hover:opacity-100 transition-opacity">
+                                                    <button class="p-1.5 rounded-lg bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10"><i data-lucide="edit-3" class="w-3.5 h-3.5"></i></button>
+                                                    <button class="p-1.5 rounded-lg bg-red-500/10 text-red-400 border border-red-500/20 hover:bg-red-500/20"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.02] transition-colors group text-gray-500">
+                                            <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-[9px] font-black uppercase tracking-tighter">Pago</span></td>
+                                            <td class="px-6 py-4 text-xs font-mono line-through">12/03/2026</td>
+                                            <td class="px-6 py-4 text-xs font-medium line-through">Impostos DAS</td>
+                                            <td class="px-6 py-4 text-xs">Receita Federal</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-right">R$ 11.500,00</td>
+                                            <td class="px-6 py-4 text-right">
+                                                <div class="flex items-center justify-end gap-2 opacity-40 group-hover:opacity-100 transition-opacity">
+                                                    <button class="p-1.5 rounded-lg bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10"><i data-lucide="eye" class="w-3.5 h-3.5"></i></button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -822,14 +918,14 @@
                                     <i data-lucide="dollar-sign" class="w-3.5 h-3.5 text-gray-500"></i>
                                     <span class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Total a Receber</span>
                                 </div>
-                                <h3 class="text-2xl font-oswald text-emerald-500">R$ 100,00</h3>
+                                <h3 class="text-2xl font-oswald text-emerald-500">R$ 64.320,00</h3>
                             </div>
                             <div class="p-5 rounded-3xl bg-[#0A0A0C] border border-white/5 shadow-xl">
                                 <div class="flex items-center gap-2 mb-3">
                                     <i data-lucide="clock" class="w-3.5 h-3.5 text-orange-400"></i>
                                     <span class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Vence Hoje</span>
                                 </div>
-                                <h3 class="text-2xl font-oswald text-white">R$ 0,00</h3>
+                                <h3 class="text-2xl font-oswald text-white">R$ 5.400,00</h3>
                             </div>
                             <div class="p-5 rounded-3xl bg-[#0A0A0C] border border-red-500/30 shadow-xl relative overflow-hidden">
                                 <div class="absolute inset-0 bg-red-500/5 pointer-events-none"></div>
@@ -837,14 +933,14 @@
                                     <i data-lucide="alert-triangle" class="w-3.5 h-3.5 text-red-500"></i>
                                     <span class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Atrasadas</span>
                                 </div>
-                                <h3 class="text-2xl font-oswald text-red-500">R$ 100,00</h3>
+                                <h3 class="text-2xl font-oswald text-red-500">R$ 12.100,00</h3>
                             </div>
                             <div class="p-5 rounded-3xl bg-[#0A0A0C] border border-white/5 shadow-xl">
                                 <div class="flex items-center gap-2 mb-3">
                                     <i data-lucide="calendar" class="w-3.5 h-3.5 text-blue-500"></i>
                                     <span class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Próximos 7 dias</span>
                                 </div>
-                                <h3 class="text-2xl font-oswald text-blue-500 font-bold tracking-tight">R$ 0,00</h3>
+                                <h3 class="text-2xl font-oswald text-blue-500 font-bold tracking-tight">R$ 15.000,00</h3>
                             </div>
                         </div>
 
@@ -895,25 +991,94 @@
                                         <tr class="border-b border-white/5 hover:bg-white/[0.01] transition-colors group">
                                             <td class="p-4">
                                                 <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-red-500/10 text-red-500 rounded-full text-[8px] font-black uppercase">
-                                                    <i data-lucide="alert-triangle" class="w-2.5 h-2.5"></i> Pendente
+                                                    <i data-lucide="alert-triangle" class="w-2.5 h-2.5"></i> Atrasado
                                                 </span>
                                             </td>
                                             <td class="p-4 text-gray-400 font-medium">09/03/2026</td>
-                                            <td class="p-4">
-                                                <p class="font-bold text-white">Sistema Financeiro (3/10)</p>
-                                            </td>
-                                            <td class="p-4 text-gray-400">Otavio</td>
-                                            <td class="p-4">
-                                                <span class="px-2 py-0.5 bg-pink-500/10 text-pink-500 border border-pink-500/20 rounded-full text-[8px] font-bold uppercase">Manutenção</span>
-                                            </td>
+                                            <td class="p-4"><p class="font-bold text-white">Sistema Financeiro (3/10)</p></td>
+                                            <td class="p-4 text-gray-400">Pão Dourado</td>
+                                            <td class="p-4"><span class="px-2 py-0.5 bg-pink-500/10 text-pink-500 border border-pink-500/20 rounded-full text-[8px] font-bold uppercase">Manutenção</span></td>
                                             <td class="p-4 text-gray-600">-</td>
-                                            <td class="p-4 font-mono text-emerald-400 text-right font-bold">R$ 100,00</td>
-                                            <td class="p-4">
+                                            <td class="p-4 font-mono text-emerald-400 text-right font-bold">R$ 12.100,00</td>
+                                            <td class="p-4 text-right">
                                                 <div class="flex items-center justify-end gap-2 px-2">
-                                                    <button class="p-1.5 bg-emerald-500/10 text-emerald-500 rounded-lg hover:bg-emerald-500 hover:text-white transition-all shadow-lg active:scale-90"><i data-lucide="check" class="w-3.5 h-3.5"></i></button>
-                                                    <button class="p-1.5 bg-gray-500/10 text-gray-400 rounded-lg hover:bg-white/10 hover:text-white transition-all active:scale-90"><i data-lucide="history" class="w-3.5 h-3.5"></i></button>
+                                                    <button class="p-1.5 bg-emerald-500/10 text-emerald-500 rounded-lg hover:bg-emerald-500 hover:text-white transition-all active:scale-90"><i data-lucide="check" class="w-3.5 h-3.5"></i></button>
                                                     <button class="p-1.5 bg-gray-500/10 text-gray-400 rounded-lg hover:bg-white/10 hover:text-white transition-all active:scale-90"><i data-lucide="edit-2" class="w-3.5 h-3.5"></i></button>
-                                                    <button class="p-1.5 bg-red-500/10 text-red-400 rounded-lg hover:bg-red-500 hover:text-white transition-all active:scale-90"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b border-white/5 hover:bg-white/[0.01] transition-colors group">
+                                            <td class="p-4">
+                                                <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-emerald-500/10 text-emerald-500 rounded-full text-[8px] font-black uppercase">
+                                                    <i data-lucide="check-circle" class="w-2.5 h-2.5"></i> Recebido
+                                                </span>
+                                            </td>
+                                            <td class="p-4 text-gray-400 font-medium">13/03/2026</td>
+                                            <td class="p-4"><p class="font-bold text-white">Consultoria Técnica</p></td>
+                                            <td class="p-4 text-gray-400">TechCorp</td>
+                                            <td class="p-4"><span class="px-2 py-0.5 bg-blue-500/10 text-blue-500 border border-blue-500/20 rounded-full text-[8px] font-bold uppercase">Serviços</span></td>
+                                            <td class="p-4 text-gray-400">CC01</td>
+                                            <td class="p-4 font-mono text-emerald-400 text-right font-bold">R$ 5.400,00</td>
+                                            <td class="p-4 text-right">
+                                                <div class="flex items-center justify-end gap-2 px-2">
+                                                    <button class="p-1.5 bg-gray-500/10 text-gray-400 rounded-lg hover:bg-white/10 hover:text-white transition-all active:scale-90"><i data-lucide="eye" class="w-3.5 h-3.5"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b border-white/5 hover:bg-white/[0.01] transition-colors group">
+                                            <td class="p-4">
+                                                <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-blue-500/10 text-blue-500 rounded-full text-[8px] font-black uppercase">
+                                                    <i data-lucide="clock" class="w-2.5 h-2.5"></i> Pendente
+                                                </span>
+                                            </td>
+                                            <td class="p-4 text-gray-400 font-medium">20/03/2026</td>
+                                            <td class="p-4"><p class="font-bold text-white">Venda de Licenças</p></td>
+                                            <td class="p-4 text-gray-400">SoftHouse</td>
+                                            <td class="p-4"><span class="px-2 py-0.5 bg-indigo-500/10 text-indigo-500 border border-indigo-500/20 rounded-full text-[8px] font-bold uppercase">Vendas</span></td>
+                                            <td class="p-4 text-gray-400">CC02</td>
+                                            <td class="p-4 font-mono text-emerald-400 text-right font-bold">R$ 15.000,00</td>
+                                            <td class="p-4 text-right">
+                                                <div class="flex items-center justify-end gap-2 px-2">
+                                                    <button class="p-1.5 bg-emerald-500/10 text-emerald-500 rounded-lg hover:bg-emerald-500 hover:text-white transition-all active:scale-90"><i data-lucide="check" class="w-3.5 h-3.5"></i></button>
+                                                    <button class="p-1.5 bg-gray-500/10 text-gray-400 rounded-lg hover:bg-white/10 hover:text-white transition-all active:scale-90"><i data-lucide="edit-2" class="w-3.5 h-3.5"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b border-white/5 hover:bg-white/[0.01] transition-colors group">
+                                            <td class="p-4">
+                                                <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-blue-500/10 text-blue-500 rounded-full text-[8px] font-black uppercase">
+                                                    <i data-lucide="clock" class="w-2.5 h-2.5"></i> Pendente
+                                                </span>
+                                            </td>
+                                            <td class="p-4 text-gray-400 font-medium">25/03/2026</td>
+                                            <td class="p-4"><p class="font-bold text-white">Manutenção Mensal</p></td>
+                                            <td class="p-4 text-gray-400">GlobalLog</td>
+                                            <td class="p-4"><span class="px-2 py-0.5 bg-blue-500/10 text-blue-500 border border-blue-500/20 rounded-full text-[8px] font-bold uppercase">Serviços</span></td>
+                                            <td class="p-4 text-gray-400">CC01</td>
+                                            <td class="p-4 font-mono text-emerald-400 text-right font-bold">R$ 21.820,00</td>
+                                            <td class="p-4 text-right">
+                                                <div class="flex items-center justify-end gap-2 px-2">
+                                                    <button class="p-1.5 bg-emerald-500/10 text-emerald-500 rounded-lg hover:bg-emerald-500 hover:text-white transition-all active:scale-90"><i data-lucide="check" class="w-3.5 h-3.5"></i></button>
+                                                    <button class="p-1.5 bg-gray-500/10 text-gray-400 rounded-lg hover:bg-white/10 hover:text-white transition-all active:scale-90"><i data-lucide="edit-2" class="w-3.5 h-3.5"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b border-white/5 hover:bg-white/[0.01] transition-colors group">
+                                            <td class="p-4">
+                                                <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-blue-500/10 text-blue-500 rounded-full text-[8px] font-black uppercase">
+                                                    <i data-lucide="clock" class="w-2.5 h-2.5"></i> Pendente
+                                                </span>
+                                            </td>
+                                            <td class="p-4 text-gray-400 font-medium">30/03/2026</td>
+                                            <td class="p-4"><p class="font-bold text-white">Implantação Projeto X</p></td>
+                                            <td class="p-4 text-gray-400">NovaEra</td>
+                                            <td class="p-4"><span class="px-2 py-0.5 bg-purple-500/10 text-purple-500 border border-purple-500/20 rounded-full text-[8px] font-bold uppercase">Projetos</span></td>
+                                            <td class="p-4 text-gray-400">CC03</td>
+                                            <td class="p-4 font-mono text-emerald-400 text-right font-bold">R$ 10.000,00</td>
+                                            <td class="p-4 text-right">
+                                                <div class="flex items-center justify-end gap-2 px-2">
+                                                    <button class="p-1.5 bg-emerald-500/10 text-emerald-500 rounded-lg hover:bg-emerald-500 hover:text-white transition-all active:scale-90"><i data-lucide="check" class="w-3.5 h-3.5"></i></button>
+                                                    <button class="p-1.5 bg-gray-500/10 text-gray-400 rounded-lg hover:bg-white/10 hover:text-white transition-all active:scale-90"><i data-lucide="edit-2" class="w-3.5 h-3.5"></i></button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -1214,6 +1379,30 @@
                                                 </div>
                                             </td>
                                         </tr>
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4"><div class="w-3 h-3 rounded-full bg-yellow-500 shadow-[0_0_8px_rgba(245,158,11,0.5)]"></div></td>
+                                            <td class="px-6 py-4 text-xs text-white font-medium">Impostos</td>
+                                            <td class="px-6 py-4 text-xs text-gray-400">DAS, GPS, FGTS</td>
+                                            <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-[9px] font-black uppercase tracking-tighter">Ativo</span></td>
+                                            <td class="px-6 py-4 text-right">
+                                                <div class="flex items-center justify-end gap-2 opacity-40 group-hover:opacity-100 transition-opacity">
+                                                    <button class="p-1.5 rounded-lg bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10"><i data-lucide="edit-3" class="w-3.5 h-3.5"></i></button>
+                                                    <button class="p-1.5 rounded-lg bg-red-500/10 text-red-400 border border-red-500/20 hover:bg-red-500/20"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4"><div class="w-3 h-3 rounded-full bg-pink-500 shadow-[0_0_8px_rgba(236,72,153,0.5)]"></div></td>
+                                            <td class="px-6 py-4 text-xs text-white font-medium">Marketing</td>
+                                            <td class="px-6 py-4 text-xs text-gray-400">Anúncios e Campanhas</td>
+                                            <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-[9px] font-black uppercase tracking-tighter">Ativo</span></td>
+                                            <td class="px-6 py-4 text-right">
+                                                <div class="flex items-center justify-end gap-2 opacity-40 group-hover:opacity-100 transition-opacity">
+                                                    <button class="p-1.5 rounded-lg bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10"><i data-lucide="edit-3" class="w-3.5 h-3.5"></i></button>
+                                                    <button class="p-1.5 rounded-lg bg-red-500/10 text-red-400 border border-red-500/20 hover:bg-red-500/20"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -1334,9 +1523,58 @@
                                 <i data-lucide="user-plus" class="w-3.5 h-3.5"></i> Novo Cliente
                             </button>
                         </div>
-                        <div class="bg-[#0A0A0C] border border-white/5 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center justify-center py-32 text-center">
-                            <i data-lucide="users" class="w-12 h-12 text-gray-700 mb-4"></i>
-                            <h3 class="text-sm font-bold text-white uppercase tracking-widest">Nenhum cliente cadastrado</h3>
+                        <div class="bg-[#0A0A0C] border border-white/5 rounded-2xl overflow-hidden shadow-2xl">
+                             <div class="p-4 border-b border-white/5 bg-white/[0.01]">
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest flex items-center gap-2">
+                                    <i data-lucide="users" class="w-4 h-4"></i> Carteira de Clientes
+                                </h3>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-left">
+                                    <thead>
+                                        <tr class="border-b border-white/5 bg-white/[0.01]">
+                                            <th class="px-6 py-4 text-[10px] font-bold text-gray-500 uppercase tracking-widest">Nome / Empresa</th>
+                                            <th class="px-6 py-4 text-[10px] font-bold text-gray-500 uppercase tracking-widest">Contato</th>
+                                            <th class="px-6 py-4 text-[10px] font-bold text-gray-500 uppercase tracking-widest">Status</th>
+                                            <th class="px-6 py-4 text-[10px] font-bold text-gray-500 uppercase tracking-widest text-right">Ações</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-white/[0.03]">
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center text-[10px] font-bold text-blue-500 border border-blue-500/20">ON</div>
+                                                    <div>
+                                                        <p class="text-xs text-white font-medium uppercase">Otavio Neto</p>
+                                                        <p class="text-[9px] text-gray-500">otavio@exemplo.com</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="px-6 py-4 text-xs text-gray-400">(61) 99999-9999</td>
+                                            <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-[9px] font-black uppercase tracking-tighter">Ativo</span></td>
+                                            <td class="px-6 py-4 text-right">
+                                                <button class="p-1.5 rounded-lg bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10"><i data-lucide="edit-3" class="w-3.5 h-3.5"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-full bg-indigo-500/10 flex items-center justify-center text-[10px] font-bold text-indigo-500 border border-indigo-500/20">LG</div>
+                                                    <div>
+                                                        <p class="text-xs text-white font-medium uppercase">Logística Global S.A.</p>
+                                                        <p class="text-[9px] text-gray-500">contato@logistica.com</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="px-6 py-4 text-xs text-gray-400">(11) 3333-4444</td>
+                                            <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-[9px] font-black uppercase tracking-tighter">Ativo</span></td>
+                                            <td class="px-6 py-4 text-right">
+                                                <button class="p-1.5 rounded-lg bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10"><i data-lucide="edit-3" class="w-3.5 h-3.5"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
 
@@ -1351,9 +1589,58 @@
                                 <i data-lucide="user-check" class="w-3.5 h-3.5"></i> Novo Fornecedor
                             </button>
                         </div>
-                        <div class="bg-[#0A0A0C] border border-white/5 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center justify-center py-32 text-center">
-                            <i data-lucide="truck" class="w-12 h-12 text-gray-700 mb-4"></i>
-                            <h3 class="text-sm font-bold text-white uppercase tracking-widest">Nenhum fornecedor cadastrado</h3>
+                        <div class="bg-[#0A0A0C] border border-white/5 rounded-2xl overflow-hidden shadow-2xl">
+                             <div class="p-4 border-b border-white/5 bg-white/[0.01]">
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest flex items-center gap-2">
+                                    <i data-lucide="truck" class="w-4 h-4"></i> Fornecedores Ativos
+                                </h3>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-left">
+                                    <thead>
+                                        <tr class="border-b border-white/5 bg-white/[0.01]">
+                                            <th class="px-6 py-4 text-[10px] font-bold text-gray-500 uppercase tracking-widest">Fornecedor</th>
+                                            <th class="px-6 py-4 text-[10px] font-bold text-gray-500 uppercase tracking-widest">Categoria</th>
+                                            <th class="px-6 py-4 text-[10px] font-bold text-gray-500 uppercase tracking-widest">Status</th>
+                                            <th class="px-6 py-4 text-[10px] font-bold text-gray-500 uppercase tracking-widest text-right">Ações</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-white/[0.03]">
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-full bg-orange-500/10 flex items-center justify-center text-[10px] font-bold text-orange-500 border border-orange-500/20">AL</div>
+                                                    <div>
+                                                        <p class="text-xs text-white font-medium uppercase">Aliança Group</p>
+                                                        <p class="text-[9px] text-gray-500">financeiro@alianca.com</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="px-6 py-4 text-xs text-gray-400">Serviços TI</td>
+                                            <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-[9px] font-black uppercase tracking-tighter">Ativo</span></td>
+                                            <td class="px-6 py-4 text-right">
+                                                <button class="p-1.5 rounded-lg bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10"><i data-lucide="edit-3" class="w-3.5 h-3.5"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-full bg-emerald-500/10 flex items-center justify-center text-[10px] font-bold text-emerald-500 border border-emerald-500/20">AM</div>
+                                                    <div>
+                                                        <p class="text-xs text-white font-medium uppercase">Amazon AWS</p>
+                                                        <p class="text-[9px] text-gray-500">billing@aws.com</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="px-6 py-4 text-xs text-gray-400">Infraestrutura</td>
+                                            <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-[9px] font-black uppercase tracking-tighter">Ativo</span></td>
+                                            <td class="px-6 py-4 text-right">
+                                                <button class="p-1.5 rounded-lg bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10"><i data-lucide="edit-3" class="w-3.5 h-3.5"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
 
@@ -1368,45 +1655,46 @@
                                 <i data-lucide="package" class="w-3.5 h-3.5"></i> Novo Produto/Serviço
                             </button>
                         </div>
-                        <div class="bg-[#0A0A0C] border border-white/5 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center justify-center py-32 text-center">
-                            <i data-lucide="box" class="w-12 h-12 text-gray-700 mb-4"></i>
-                            <h3 class="text-sm font-bold text-white uppercase tracking-widest">Nenhum item cadastrado</h3>
+                        <div class="bg-[#0A0A0C] border border-white/5 rounded-2xl overflow-hidden shadow-2xl">
+                             <div class="p-4 border-b border-white/5 bg-white/[0.01]">
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest flex items-center gap-2">
+                                    <i data-lucide="package" class="w-4 h-4"></i> Catálogo
+                                </h3>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-left">
+                                    <thead>
+                                        <tr class="border-b border-white/5 bg-white/[0.01]">
+                                            <th class="px-6 py-4 text-[10px] font-bold text-gray-500 uppercase tracking-widest">Nome</th>
+                                            <th class="px-6 py-4 text-[10px] font-bold text-gray-500 uppercase tracking-widest">Tipo</th>
+                                            <th class="px-6 py-4 text-[10px] font-bold text-gray-500 uppercase tracking-widest text-right">Preço</th>
+                                            <th class="px-6 py-4 text-[10px] font-bold text-gray-500 uppercase tracking-widest text-right">Ações</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-white/[0.03]">
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4 text-xs text-white font-medium">Licença Monetex Pro</td>
+                                            <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-[9px] font-black uppercase tracking-tighter">Produto</span></td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-white text-right">R$ 299,90</td>
+                                            <td class="px-6 py-4 text-right">
+                                                <button class="p-1.5 rounded-lg bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10"><i data-lucide="edit-3" class="w-3.5 h-3.5"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4 text-xs text-white font-medium">Consultoria Estratégica</td>
+                                            <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-[9px] font-black uppercase tracking-tighter">Serviço</span></td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-white text-right">R$ 2.500,00</td>
+                                            <td class="px-6 py-4 text-right">
+                                                <button class="p-1.5 rounded-lg bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10"><i data-lucide="edit-3" class="w-3.5 h-3.5"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- View: Categories -->
-                    <div id="view-categories" class="hidden p-8 overflow-y-auto space-y-8 flex-1">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <h1 class="text-2xl font-oswald text-white uppercase tracking-tight">Categorias</h1>
-                                <p class="text-xs text-gray-500">Plano de contas e classificações</p>
-                            </div>
-                            <button class="px-4 py-2 bg-blue-600 text-white rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-blue-700 transition-colors flex items-center gap-2">
-                                <i data-lucide="folder-plus" class="w-3.5 h-3.5"></i> Nova Categoria
-                            </button>
-                        </div>
-                        <div class="bg-[#0A0A0C] border border-white/5 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center justify-center py-32 text-center">
-                            <i data-lucide="folder" class="w-12 h-12 text-gray-700 mb-4"></i>
-                            <h3 class="text-sm font-bold text-white uppercase tracking-widest">Nenhuma categoria cadastrada</h3>
-                        </div>
-                    </div>
 
-                    <!-- View: Cost Centers -->
-                    <div id="view-costcenters" class="hidden p-8 overflow-y-auto space-y-8 flex-1">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <h1 class="text-2xl font-oswald text-white uppercase tracking-tight">Centros de Custo</h1>
-                                <p class="text-xs text-gray-500">Departamentos e centros de resultado</p>
-                            </div>
-                            <button class="px-4 py-2 bg-blue-600 text-white rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-blue-700 transition-colors flex items-center gap-2">
-                                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Novo Centro de Custo
-                            </button>
-                        </div>
-                        <div class="bg-[#0A0A0C] border border-white/5 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center justify-center py-32 text-center">
-                            <i data-lucide="target" class="w-12 h-12 text-gray-700 mb-4"></i>
-                            <h3 class="text-sm font-bold text-white uppercase tracking-widest">Nenhum centro de custo cadastrado</h3>
-                        </div>
-                    </div>
 
                     <!-- View: Accounts -->
                     <div id="view-accounts" class="hidden p-8 overflow-y-auto space-y-8 flex-1">
@@ -1424,11 +1712,11 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
                             <div class="p-6 ds-card border-white/5 bg-[#0A0A0C]">
                                 <p class="text-[10px] text-gray-500 uppercase font-black tracking-widest mb-2">Saldo Total</p>
-                                <p class="text-2xl font-oswald text-emerald-400">R$ 29.290,83</p>
+                                <p class="text-2xl font-oswald text-emerald-400">R$ 156.101,83</p>
                             </div>
                             <div class="p-6 ds-card border-white/5 bg-[#0A0A0C]">
                                 <p class="text-[10px] text-gray-500 uppercase font-black tracking-widest mb-2">Contas Ativas</p>
-                                <p class="text-2xl font-oswald text-white">3</p>
+                                <p class="text-2xl font-oswald text-white">4</p>
                             </div>
                             <div class="p-6 ds-card border-white/5 bg-[#0A0A0C]">
                                 <p class="text-[10px] text-gray-500 uppercase font-black tracking-widest mb-2">Limite Total</p>
@@ -1473,7 +1761,7 @@
                                             </td>
                                             <td class="px-6 py-4 text-xs text-white font-medium uppercase tracking-tight">Caixa Principal</td>
                                             <td class="px-6 py-4 text-[10px] text-gray-500">-</td>
-                                            <td class="px-6 py-4 text-sm font-oswald text-emerald-400 text-right">R$ 3.520,83</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-emerald-400 text-right">R$ 13.520,83</td>
                                             <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-[9px] font-black uppercase tracking-tighter shadow-[0_0_8px_rgba(59,130,246,0.2)]">Ativa</span></td>
                                             <td class="px-6 py-4 text-right">
                                                 <div class="flex items-center justify-end gap-2 opacity-40 group-hover:opacity-100 transition-opacity">
@@ -1489,9 +1777,27 @@
                                                     <span class="text-[10px] uppercase font-bold">Conta Bancária</span>
                                                 </div>
                                             </td>
-                                            <td class="px-6 py-4 text-xs text-white font-medium uppercase tracking-tight">Conta Itaú</td>
-                                            <td class="px-6 py-4 text-[10px] text-gray-500">Itaú Ag: 5678</td>
-                                            <td class="px-6 py-4 text-sm font-oswald text-emerald-400 text-right">R$ 25.030,00</td>
+                                            <td class="px-6 py-4 text-xs text-white font-medium uppercase tracking-tight">Conta Itaú Corporate</td>
+                                            <td class="px-6 py-4 text-[10px] text-gray-500">Itaú Ag: 5678 CC: 12345-6</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-emerald-400 text-right">R$ 85.030,00</td>
+                                            <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-[9px] font-black uppercase tracking-tighter">Ativa</span></td>
+                                            <td class="px-6 py-4 text-right">
+                                                <div class="flex items-center justify-end gap-2 opacity-40 group-hover:opacity-100 transition-opacity">
+                                                    <button class="p-1.5 rounded-lg bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10"><i data-lucide="edit-3" class="w-3.5 h-3.5"></i></button>
+                                                    <button class="p-1.5 rounded-lg bg-red-500/10 text-red-400 border border-red-500/20 hover:bg-red-500/20"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4">
+                                                <div class="flex items-center gap-2 text-gray-400">
+                                                    <i data-lucide="landmark" class="w-4 h-4"></i>
+                                                    <span class="text-[10px] uppercase font-bold">Investimento</span>
+                                                </div>
+                                            </td>
+                                            <td class="px-6 py-4 text-xs text-white font-medium uppercase tracking-tight">CDB Liquidez Diária</td>
+                                            <td class="px-6 py-4 text-[10px] text-gray-500">Banco Inter</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-emerald-400 text-right">R$ 57.551,00</td>
                                             <td class="px-6 py-4"><span class="px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-[9px] font-black uppercase tracking-tighter">Ativa</span></td>
                                             <td class="px-6 py-4 text-right">
                                                 <div class="flex items-center justify-end gap-2 opacity-40 group-hover:opacity-100 transition-opacity">
@@ -1580,23 +1886,23 @@
                         <!-- Summary Cards -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
                             <div class="p-5 ds-card border-white/5 bg-[#0A0A0C]">
-                                <div class="text-2xl font-oswald text-white">1</div>
+                                <div class="text-2xl font-oswald text-white">12</div>
                                 <p class="text-[9px] text-gray-600 uppercase font-black tracking-widest">Total</p>
                             </div>
                             <div class="p-5 ds-card border-white/5 bg-[#0A0A0C]">
-                                <div class="text-2xl font-oswald text-yellow-500">1</div>
+                                <div class="text-2xl font-oswald text-yellow-500">3</div>
                                 <p class="text-[9px] text-gray-600 uppercase font-black tracking-widest">Rascunhos</p>
                             </div>
                             <div class="p-5 ds-card border-white/5 bg-[#0A0A0C]">
-                                <div class="text-2xl font-oswald text-indigo-400">0</div>
-                                <p class="text-[9px] text-gray-600 uppercase font-black tracking-widest">Aguardando</p>
+                                <div class="text-2xl font-oswald text-indigo-400">4</div>
+                                <p class="text-[9px] text-gray-600 uppercase font-black tracking-widest">Enviadas</p>
                             </div>
                             <div class="p-5 ds-card border-white/5 bg-[#0A0A0C]">
-                                <div class="text-2xl font-oswald text-emerald-400">0</div>
+                                <div class="text-2xl font-oswald text-emerald-400">5</div>
                                 <p class="text-[9px] text-gray-600 uppercase font-black tracking-widest">Aceitos</p>
                             </div>
                             <div class="p-5 ds-card border-white/5 bg-[#0A0A0C]">
-                                <div class="text-2xl font-oswald text-white">R$ 0,00</div>
+                                <div class="text-2xl font-oswald text-white">R$ 124.500,00</div>
                                 <p class="text-[9px] text-gray-600 uppercase font-black tracking-widest">Valor Aceito</p>
                             </div>
                         </div>
@@ -1629,13 +1935,33 @@
                                     </thead>
                                     <tbody class="divide-y divide-white/[0.03]">
                                         <tr class="hover:bg-white/[0.02] transition-colors group">
-                                            <td class="px-6 py-4 text-xs text-gray-400 text-center">#2</td>
-                                            <td class="px-6 py-4 text-[10px]"><span class="px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-gray-400 uppercase font-black">Contrato</span></td>
-                                            <td class="px-6 py-4 text-xs text-white font-medium uppercase tracking-tight">Pão</td>
+                                            <td class="px-6 py-4 text-xs text-gray-400 text-center">#4</td>
+                                            <td class="px-6 py-4 text-[10px]"><span class="px-2 py-0.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-500 uppercase font-black">Contrato</span></td>
+                                            <td class="px-6 py-4 text-xs text-white font-medium uppercase tracking-tight">Sistema Financeiro Enterprise</td>
+                                            <td class="px-6 py-4 text-xs text-gray-300">Logística Global S.A.</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-white text-right">R$ 45.000,00</td>
+                                            <td class="px-6 py-4 text-center"><span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-[9px] font-black uppercase tracking-tighter flex items-center justify-center gap-1 mx-auto max-w-fit"><i data-lucide="check-circle" class="w-3 h-3"></i> Ativo</span></td>
+                                            <td class="px-6 py-4 text-xs text-gray-400 font-mono text-right">10/01/2026</td>
+                                            <td class="px-6 py-4 text-right"><i data-lucide="more-horizontal" class="w-4 h-4 text-gray-600 cursor-pointer"></i></td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4 text-xs text-gray-400 text-center">#3</td>
+                                            <td class="px-6 py-4 text-[10px]"><span class="px-2 py-0.5 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-500 uppercase font-black">Proposta</span></td>
+                                            <td class="px-6 py-4 text-xs text-white font-medium uppercase tracking-tight">App Mobile Versão 2.0</td>
                                             <td class="px-6 py-4 text-xs text-gray-300">Otavio Neto</td>
-                                            <td class="px-6 py-4 text-sm font-oswald text-white text-right">R$ 100,00</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-white text-right">R$ 15.600,00</td>
+                                            <td class="px-6 py-4 text-center"><span class="px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-[9px] font-black uppercase tracking-tighter flex items-center justify-center gap-1 mx-auto max-w-fit"><i data-lucide="send" class="w-3 h-3"></i> Enviada</span></td>
+                                            <td class="px-6 py-4 text-xs text-gray-400 font-mono text-right">05/03/2026</td>
+                                            <td class="px-6 py-4 text-right"><i data-lucide="more-horizontal" class="w-4 h-4 text-gray-600 cursor-pointer"></i></td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4 text-xs text-gray-400 text-center">#2</td>
+                                            <td class="px-6 py-4 text-[10px]"><span class="px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-gray-400 uppercase font-black">Rascunho</span></td>
+                                            <td class="px-6 py-4 text-xs text-white font-medium uppercase tracking-tight">Manutenção Servidores</td>
+                                            <td class="px-6 py-4 text-xs text-gray-300">Aliança Group</td>
+                                            <td class="px-6 py-4 text-sm font-oswald text-white text-right">R$ 2.400,00</td>
                                             <td class="px-6 py-4 text-center"><span class="px-2 py-0.5 rounded-full bg-gray-500/10 text-gray-500 border border-gray-500/20 text-[9px] font-black uppercase tracking-tighter flex items-center justify-center gap-1 mx-auto max-w-fit"><i data-lucide="clock" class="w-3 h-3"></i> Rascunho</span></td>
-                                            <td class="px-6 py-4 text-xs text-gray-400 font-mono text-right">28/12/2025</td>
+                                            <td class="px-6 py-4 text-xs text-gray-400 font-mono text-right">28/02/2026</td>
                                             <td class="px-6 py-4 text-right"><i data-lucide="more-horizontal" class="w-4 h-4 text-gray-600 cursor-pointer"></i></td>
                                         </tr>
                                     </tbody>
@@ -1813,6 +2139,50 @@
                                     <div class="flex justify-between text-[10px]">
                                         <span class="text-gray-600 uppercase font-black">Última Conciliação</span>
                                         <span class="text-white">Hoje, 10:45</span>
+                                    </div>
+                                </div>
+                                <div class="mt-6 pt-4 border-t border-white/5 flex justify-end">
+                                    <button class="px-3 py-1.5 rounded-lg bg-white/5 text-[9px] font-bold text-white uppercase tracking-widest hover:bg-white/10 transition-colors">Gerenciar</button>
+                                </div>
+                            </div>
+                            <div class="p-6 ds-card border-white/5 bg-[#0A0A0C] hover:border-indigo-500/30 transition-all group">
+                                <div class="flex items-center gap-4 mb-6">
+                                    <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-500 font-bold text-xl font-oswald border border-indigo-500/20 shadow-[0_0_15px_rgba(99,102,241,0.2)]">SH</div>
+                                    <div>
+                                        <h3 class="text-sm font-bold text-white uppercase tracking-tight">SoftHouse Solutions</h3>
+                                        <p class="text-[10px] text-gray-500">CNPJ: 45.123.890/0002-15</p>
+                                    </div>
+                                </div>
+                                <div class="space-y-3 pt-4 border-t border-white/5">
+                                    <div class="flex justify-between text-[10px]">
+                                        <span class="text-gray-600 uppercase font-black">Status</span>
+                                        <span class="text-emerald-400 font-bold uppercase">Filial Ativa</span>
+                                    </div>
+                                    <div class="flex justify-between text-[10px]">
+                                        <span class="text-gray-600 uppercase font-black">Última Conciliação</span>
+                                        <span class="text-white">Hoje, 09:12</span>
+                                    </div>
+                                </div>
+                                <div class="mt-6 pt-4 border-t border-white/5 flex justify-end">
+                                    <button class="px-3 py-1.5 rounded-lg bg-white/5 text-[9px] font-bold text-white uppercase tracking-widest hover:bg-white/10 transition-colors">Gerenciar</button>
+                                </div>
+                            </div>
+                            <div class="p-6 ds-card border-white/5 bg-[#0A0A0C] hover:border-purple-500/30 transition-all group">
+                                <div class="flex items-center gap-4 mb-6">
+                                    <div class="w-12 h-12 rounded-2xl bg-purple-500/10 flex items-center justify-center text-purple-500 font-bold text-xl font-oswald border border-purple-500/20 shadow-[0_0_15px_rgba(168,85,247,0.2)]">TC</div>
+                                    <div>
+                                        <h3 class="text-sm font-bold text-white uppercase tracking-tight">TechCorp Brasil</h3>
+                                        <p class="text-[10px] text-gray-500">CNPJ: 07.456.123/0001-90</p>
+                                    </div>
+                                </div>
+                                <div class="space-y-3 pt-4 border-t border-white/5">
+                                    <div class="flex justify-between text-[10px]">
+                                        <span class="text-gray-600 uppercase font-black">Status</span>
+                                        <span class="text-emerald-400 font-bold uppercase">Unidade Ativa</span>
+                                    </div>
+                                    <div class="flex justify-between text-[10px]">
+                                        <span class="text-gray-600 uppercase font-black">Última Conciliação</span>
+                                        <span class="text-white">Ontem, 17:30</span>
                                     </div>
                                 </div>
                                 <div class="mt-6 pt-4 border-t border-white/5 flex justify-end">
@@ -2000,7 +2370,7 @@
                                     <span class="text-[9px] text-gray-600 uppercase font-black tracking-widest">Movimentações</span>
                                     <i data-lucide="refresh-cw" class="w-3.5 h-3.5 text-gray-700"></i>
                                 </div>
-                                <p class="text-2xl font-oswald text-white">13</p>
+                                <p class="text-2xl font-oswald text-white">42</p>
                             </div>
                         </div>
 
@@ -2085,6 +2455,55 @@
                                                 <button class="text-gray-600 hover:text-white transition-colors"><i data-lucide="refresh-cw" class="w-4 h-4 text-gray-700"></i></button>
                                             </td>
                                         </tr>
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4 text-[10px] text-gray-400 font-mono">28/12/2025</td>
+                                            <td class="px-6 py-4 text-center">
+                                                <div class="w-7 h-7 rounded-full bg-red-500/10 flex items-center justify-center text-red-500 mx-auto border border-red-500/10"><i data-lucide="arrow-up" class="w-3.5 h-3.5"></i></div>
+                                            </td>
+                                            <td class="px-6 py-4 text-[10px] text-white font-bold uppercase tracking-tight">Itaú Corporate</td>
+                                            <td class="px-6 py-4">
+                                                <p class="text-[11px] text-white font-medium uppercase">Pagamento: Fornecedor Madeiras S.A.</p>
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                <div class="flex items-center gap-2">
+                                                    <div class="w-5 h-5 rounded-full bg-blue-500/20 flex items-center justify-center text-[7px] font-bold text-blue-400">ON</div>
+                                                    <span class="text-[9px] text-gray-400 uppercase font-black">Otavio Neto</span>
+                                                </div>
+                                            </td>
+                                            <td class="px-6 py-4 text-xs font-oswald text-red-500 text-right">- R$ 12.800,00</td>
+                                            <td class="px-6 py-4 text-[10px] text-white font-mono text-right">R$ 85.030,00</td>
+                                            <td class="px-6 py-4 text-center">
+                                                <span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/10 text-[8px] font-black uppercase">Confirmada</span>
+                                            </td>
+                                            <td class="px-6 py-4 text-right">
+                                                <button class="text-gray-600 hover:text-white transition-colors"><i data-lucide="refresh-cw" class="w-4 h-4 text-gray-700"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="hover:bg-white/[0.02] transition-colors group">
+                                            <td class="px-6 py-4 text-[10px] text-gray-400 font-mono">29/12/2025</td>
+                                            <td class="px-6 py-4 text-center">
+                                                <div class="w-7 h-7 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-500 mx-auto border border-emerald-500/10"><i data-lucide="arrow-down" class="w-3.5 h-3.5"></i></div>
+                                            </td>
+                                            <td class="px-6 py-4 text-[10px] text-white font-bold uppercase tracking-tight">Bradesco PJ</td>
+                                            <td class="px-6 py-4">
+                                                <p class="text-[11px] text-white font-medium uppercase">Venda: Software de Logística</p>
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                <div class="flex items-center gap-2">
+                                                    <div class="w-5 h-5 rounded-full bg-blue-500/20 flex items-center justify-center text-[7px] font-bold text-blue-400">ON</div>
+                                                    <span class="text-[9px] text-gray-400 uppercase font-black">Otavio Neto</span>
+                                                </div>
+                                            </td>
+                                            <td class="px-6 py-4 text-xs font-oswald text-emerald-400 text-right">+ R$ 45.000,00</td>
+                                            <td class="px-6 py-4 text-[10px] text-white font-mono text-right">R$ 57.551,00</td>
+                                            <td class="px-6 py-4 text-center">
+                                                <span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/10 text-[8px] font-black uppercase">Confirmada</span>
+                                            </td>
+                                            <td class="px-6 py-4 text-right">
+                                                <button class="text-gray-600 hover:text-white transition-colors"><i data-lucide="refresh-cw" class="w-4 h-4 text-gray-700"></i></button>
+                                            </td>
+                                        </tr>
+
                                     </tbody>
                                 </table>
                             </div>
@@ -2120,7 +2539,7 @@
                                     <span class="text-[9px] text-gray-600 uppercase font-black tracking-widest">Total Orçado</span>
                                     <i data-lucide="target" class="w-3.5 h-3.5 text-gray-700"></i>
                                 </div>
-                                <p class="text-2xl font-oswald text-white">R$ 0,00</p>
+                                <p class="text-2xl font-oswald text-white">R$ 35.000,00</p>
                                 <p class="text-[9px] text-gray-600 uppercase mt-2">Meta para o mês</p>
                             </div>
                             <div class="p-6 ds-card border-white/5 bg-[#0A0A0C] relative">
@@ -2128,8 +2547,8 @@
                                     <span class="text-[9px] text-gray-600 uppercase font-black tracking-widest">Total Realizado</span>
                                     <i data-lucide="wallet" class="w-3.5 h-3.5 text-gray-700"></i>
                                 </div>
-                                <p class="text-2xl font-oswald text-white">R$ 0,00</p>
-                                <p class="text-[9px] text-gray-600 uppercase mt-2">Sem orçamento definido</p>
+                                <p class="text-2xl font-oswald text-white">R$ 18.450,00</p>
+                                <p class="text-[9px] text-gray-600 uppercase mt-2">12 lançamentos com orçamento</p>
                             </div>
                             <div class="p-6 ds-card border-white/5 bg-[#0A0A0C] relative">
                                 <div class="flex justify-between items-start mb-4">
@@ -2305,16 +2724,16 @@
                                         <span class="text-[9px] text-gray-600 uppercase font-black tracking-widest">Receitas</span>
                                         <i data-lucide="trending-up" class="w-3.5 h-3.5 text-emerald-500"></i>
                                     </div>
-                                    <p class="text-2xl font-oswald text-emerald-400">R$ 11.000,00</p>
-                                    <p class="text-[9px] text-gray-600 mt-2 uppercase">1 categorias</p>
+                                    <p class="text-2xl font-oswald text-emerald-400">R$ 64.320,00</p>
+                                    <p class="text-[9px] text-gray-600 mt-2 uppercase">4 categorias principais</p>
                                 </div>
                                 <div class="p-6 ds-card border-white/5 bg-[#0A0A0C]">
                                     <div class="flex justify-between items-center mb-4">
                                         <span class="text-[9px] text-gray-600 uppercase font-black tracking-widest">Despesas</span>
                                         <i data-lucide="trending-down" class="w-3.5 h-3.5 text-red-500"></i>
                                     </div>
-                                    <p class="text-2xl font-oswald text-red-500">R$ 235,00</p>
-                                    <p class="text-[9px] text-gray-600 mt-2 uppercase">2 categorias</p>
+                                    <p class="text-2xl font-oswald text-red-500">R$ 28.150,00</p>
+                                    <p class="text-[9px] text-gray-600 mt-2 uppercase">8 categorias de gastos</p>
                                 </div>
                                 <div class="p-6 ds-card border-emerald-500/20 bg-emerald-500/5 relative overflow-hidden group">
                                     <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-50"></div>
@@ -2323,7 +2742,7 @@
                                             <span class="text-[9px] text-emerald-400 uppercase font-black tracking-widest">Resultado</span>
                                             <i data-lucide="dollar-sign" class="w-3.5 h-3.5 text-emerald-500"></i>
                                         </div>
-                                        <p class="text-2xl font-oswald text-emerald-400">R$ 10.765,00</p>
+                                        <p class="text-2xl font-oswald text-emerald-400">R$ 36.170,00</p>
                                         <span class="inline-block px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[8px] font-black uppercase mt-2">Lucro</span>
                                     </div>
                                 </div>
@@ -2358,7 +2777,7 @@
                                         <tbody class="divide-y divide-white/[0.03]">
                                             <tr class="bg-emerald-500/[0.02]">
                                                 <td class="px-8 py-5 text-xs font-bold text-emerald-400 uppercase tracking-widest">(+) RECEITA BRUTA</td>
-                                                <td class="px-8 py-5 text-sm font-oswald text-emerald-400 text-right">R$ 11.000,00</td>
+                                                <td class="px-8 py-5 text-sm font-oswald text-emerald-400 text-right">R$ 64.320,00</td>
                                                 <td class="px-8 py-5 text-xs text-gray-500 text-right font-mono">100,0%</td>
                                             </tr>
                                             <tr class="hover:bg-white/[0.01] transition-colors">
@@ -2383,8 +2802,8 @@
                                             </tr>
                                             <tr class="bg-emerald-500/10 border-t border-emerald-500/20">
                                                 <td class="px-8 py-6 text-sm font-black text-emerald-400 uppercase tracking-widest">(=) RESULTADO LÍQUIDO</td>
-                                                <td class="px-8 py-6 text-lg font-oswald text-emerald-400 text-right">R$ 10.765,00</td>
-                                                <td class="px-8 py-6 text-sm text-emerald-400 font-bold text-right font-mono">97,9%</td>
+                                                <td class="px-8 py-6 text-lg font-oswald text-emerald-400 text-right">R$ 36.170,00</td>
+                                                <td class="px-8 py-6 text-sm text-emerald-400 font-bold text-right font-mono">56,2%</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -2415,22 +2834,22 @@
                             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                                 <div class="p-6 ds-card border-white/5 bg-[#0A0A0C]">
                                     <span class="text-[9px] text-gray-600 uppercase font-black tracking-widest mb-4 block">Saldo Atual</span>
-                                    <p class="text-2xl font-oswald text-emerald-400">R$ 26.135,00</p>
-                                    <p class="text-[9px] text-gray-600 mt-2 uppercase">3 conta(s) ativa(s)</p>
+                                    <p class="text-2xl font-oswald text-emerald-400">R$ 156.101,83</p>
+                                    <p class="text-[9px] text-gray-600 mt-2 uppercase">4 conta(s) ativa(s)</p>
                                 </div>
                                 <div class="p-6 ds-card border-white/5 bg-[#0A0A0C]">
                                     <span class="text-[9px] text-gray-600 uppercase font-black tracking-widest mb-4 block">Saldo em 30 dias</span>
-                                    <p class="text-2xl font-oswald text-white">R$ 26.135,00</p>
-                                    <p class="text-[9px] text-emerald-400 mt-2 uppercase">+R$ 0,00 no período</p>
+                                    <p class="text-2xl font-oswald text-white">R$ 192.271,83</p>
+                                    <p class="text-[9px] text-emerald-400 mt-2 uppercase">+R$ 36.170,00 no período</p>
                                 </div>
                                 <div class="p-6 ds-card border-white/5 bg-[#0A0A0C]">
                                     <span class="text-[9px] text-gray-600 uppercase font-black tracking-widest mb-4 block">Total Entradas</span>
-                                    <p class="text-2xl font-oswald text-emerald-400">R$ 100,00</p>
+                                    <p class="text-2xl font-oswald text-emerald-400">R$ 64.320,00</p>
                                     <p class="text-[9px] text-gray-600 mt-2 uppercase">A receber no período</p>
                                 </div>
                                 <div class="p-6 ds-card border-white/5 bg-[#0A0A0C]">
                                     <span class="text-[9px] text-gray-600 uppercase font-black tracking-widest mb-4 block">Total Saídas</span>
-                                    <p class="text-2xl font-oswald text-red-500">R$ 100,00</p>
+                                    <p class="text-2xl font-oswald text-red-500">R$ 28.150,00</p>
                                     <p class="text-[9px] text-gray-600 mt-2 uppercase">A pagar no período</p>
                                 </div>
                             </div>
