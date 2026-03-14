@@ -176,6 +176,10 @@
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
             background: rgba(255, 255, 255, 0.1);
         }
+
+        @media (max-width: 767px) {
+            .nav-desktop-only { display: none !important; }
+        }
     </style>
 </head>
 
@@ -203,7 +207,7 @@
             <a class="flex items-center gap-2" href="#">
                 <img src="assets/logo-monetex-CVRVr5hK_dec5b0863654.png" alt="Monetex" class="h-8 w-auto">
             </a>
-            <div class="hidden md:flex gap-8 -translate-x-1/2 absolute left-1/2 items-center">
+            <div class="nav-desktop-only md:flex gap-8 items-center">
                 <a class="text-[14px] hover:text-blue-400 transition-colors font-medium text-white/70 tracking-wide"
                     href="#funcionalidades">Funcionalidades</a>
                 <a class="text-[14px] hover:text-blue-400 transition-colors font-medium text-white/70 tracking-wide"
@@ -214,7 +218,7 @@
                     href="#faq">FAQ</a>
             </div>
             <div class="flex gap-4 items-center">
-                <a class="hidden md:flex group transition-all duration-300 hover:bg-blue-500/10 hover:border-blue-400 hover:shadow-[0_0_35px_rgba(59,130,246,0.6),inset_0_0_20px_rgba(59,130,246,0.4)] hover:scale-[1.02] items-center justify-center bg-black/60 border-blue-500 border rounded-full px-6 py-2"
+                <a class="nav-desktop-only md:flex group transition-all duration-300 hover:bg-blue-500/10 hover:border-blue-400 hover:shadow-[0_0_35px_rgba(59,130,246,0.6),inset_0_0_20px_rgba(59,130,246,0.4)] hover:scale-[1.02] items-center justify-center bg-black/60 border-blue-500 border rounded-full px-6 py-2"
                     href="https://pagacerto.parceiroapp.com.br">
                     <span class="text-[13px] font-semibold text-white tracking-tight uppercase">Entrar</span>
                 </a>
@@ -426,7 +430,7 @@
                 </aside>
 
                 <!-- Dashboard Content -->
-                <div class="flex-1 flex flex-col bg-[#050505] overflow-hidden">
+                <div class="flex-1 flex flex-col bg-[#050505] overflow-hidden relative">
                     <!-- Dashboard Header -->
                     <header class="h-16 border-b border-white/5 flex items-center justify-between px-4 md:px-8 bg-[#0A0A0C]/50 backdrop-blur-md sticky top-0 z-50">
                         <div class="flex items-center gap-3">
@@ -3178,6 +3182,30 @@
                             <h3 class="text-sm font-bold text-white uppercase tracking-widest">Painel de Configurações em Desenvolvimento</h3>
                         </div>
                     </div>
+                    <!-- Mobile Bottom Navigation (Moved for persistence inside mockup) -->
+                    <div class="md:hidden absolute bottom-6 left-1/2 -translate-x-1/2 w-[calc(100%-48px)] max-w-md h-16 bg-[#0A0A0C] border border-white/10 rounded-3xl shadow-2xl backdrop-blur-xl z-[150] flex items-center justify-around px-6">
+                        <button onclick="switchView('dashboard')" id="mob-nav-dashboard" class="flex flex-col items-center gap-1 text-blue-500">
+                            <i data-lucide="layout-grid" class="w-5 h-5"></i>
+                            <span class="text-[8px] font-black uppercase tracking-widest">Home</span>
+                        </button>
+                        <button onclick="switchView('payable')" id="mob-nav-payable" class="flex flex-col items-center gap-1 text-gray-500">
+                            <i data-lucide="arrow-up-circle" class="w-5 h-5"></i>
+                            <span class="text-[8px] font-black uppercase tracking-widest">Pagar</span>
+                        </button>
+                        <div class="relative -mt-12">
+                            <button class="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-[0_10px_20px_rgba(37,99,235,0.4)] border-4 border-[#050505]">
+                                <i data-lucide="plus" class="w-6 h-6"></i>
+                            </button>
+                        </div>
+                        <button onclick="switchView('receivable')" id="mob-nav-receivable" class="flex flex-col items-center gap-1 text-gray-500">
+                            <i data-lucide="arrow-down-circle" class="w-5 h-5"></i>
+                            <span class="text-[8px] font-black uppercase tracking-widest">Receber</span>
+                        </button>
+                        <button onclick="switchView('reports')" id="mob-nav-reports" class="flex flex-col items-center gap-1 text-gray-500">
+                            <i data-lucide="bar-chart-2" class="w-5 h-5"></i>
+                            <span class="text-[8px] font-black uppercase tracking-widest">Relats</span>
+                        </button>
+                    </div>
                 </div>
 
 
@@ -3919,30 +3947,7 @@
         document.head.appendChild(style);
     </script>
 
-    <!-- Mobile Bottom Navigation (Moved for persistence) -->
-    <div class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 w-[calc(100%-48px)] max-w-md h-16 bg-[#0A0A0C] border border-white/10 rounded-3xl shadow-2xl backdrop-blur-xl z-[150] flex items-center justify-around px-6">
-        <button onclick="switchView('dashboard')" id="mob-nav-dashboard" class="flex flex-col items-center gap-1 text-blue-500">
-            <i data-lucide="layout-grid" class="w-5 h-5"></i>
-            <span class="text-[8px] font-black uppercase tracking-widest">Home</span>
-        </button>
-        <button onclick="switchView('payable')" id="mob-nav-payable" class="flex flex-col items-center gap-1 text-gray-500">
-            <i data-lucide="arrow-up-circle" class="w-5 h-5"></i>
-            <span class="text-[8px] font-black uppercase tracking-widest">Pagar</span>
-        </button>
-        <div class="relative -mt-12">
-            <button class="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-[0_10px_20px_rgba(37,99,235,0.4)] border-4 border-[#050505]">
-                <i data-lucide="plus" class="w-6 h-6"></i>
-            </button>
-        </div>
-        <button onclick="switchView('receivable')" id="mob-nav-receivable" class="flex flex-col items-center gap-1 text-gray-500">
-            <i data-lucide="arrow-down-circle" class="w-5 h-5"></i>
-            <span class="text-[8px] font-black uppercase tracking-widest">Receber</span>
-        </button>
-        <button onclick="switchView('reports')" id="mob-nav-reports" class="flex flex-col items-center gap-1 text-gray-500">
-            <i data-lucide="bar-chart-2" class="w-5 h-5"></i>
-            <span class="text-[8px] font-black uppercase tracking-widest">Relats</span>
-        </button>
-    </div>
+
 </body>
 
 </html>
