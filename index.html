@@ -208,25 +208,31 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="flex z-[100] fixed w-full pt-4 md:pt-6 px-4 top-0 right-0 left-0 items-center justify-center pointer-events-none">
-        <div class="flex bg-black/90 w-full max-w-5xl border-white/10 border rounded-full py-1.5 px-2 md:pr-2 md:pl-1 relative shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-md items-center justify-between pointer-events-auto scroll-item scroll-fade-up" style="animation-play-state: running">
-            <a class="inline-flex items-center justify-center bg-center w-[120px] h-[48px] rounded-full transition-transform hover:scale-[1.05]" href="#hero">
-                <img src="assets/logo-monetex-CVRVr5hK_dec5b0863654.png" alt="Monetex" class="h-6 w-auto brightness-200">
+    <nav
+        class="flex z-[100] fixed w-full pt-4 md:pt-6 px-4 top-0 right-0 left-0 items-center justify-center pointer-events-none">
+        <div
+            class="flex bg-black/80 w-full max-w-5xl border-white/5 border rounded-full py-2.5 px-5 md:pr-2 md:pl-6 relative shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-xl items-center justify-between pointer-events-auto">
+            <a class="flex items-center gap-2" href="#">
+                <img src="assets/logo-monetex-CVRVr5hK_dec5b0863654.png" alt="Monetex" class="h-8 w-auto">
             </a>
-            
-            <div class="hidden md:flex gap-8 -translate-x-1/2 absolute left-1/2 items-center">
-                <a class="text-[13px] hover:text-white transition-colors font-medium text-white/50 tracking-wide uppercase font-sans" href="#funcionalidades">Funcionalidades</a>
-                <a class="text-[13px] hover:text-white transition-colors font-medium text-white/50 tracking-wide uppercase font-sans" href="#depoimentos">Depoimentos</a>
-                <a class="text-[13px] hover:text-white transition-colors font-medium text-white/50 tracking-wide uppercase font-sans" href="#precos">Preços</a>
-                <a class="text-[13px] hover:text-white transition-colors font-medium text-white/50 tracking-wide uppercase font-sans" href="#faq">FAQ</a>
+            <div class="nav-desktop-only md:flex gap-8 items-center">
+                <a class="text-[14px] hover:text-blue-400 transition-colors font-medium text-white/70 tracking-wide"
+                    href="#funcionalidades">Funcionalidades</a>
+                <a class="text-[14px] hover:text-blue-400 transition-colors font-medium text-white/70 tracking-wide"
+                    href="#depoimentos">Depoimentos</a>
+                <a class="text-[14px] hover:text-blue-400 transition-colors font-medium text-white/70 tracking-wide"
+                    href="#precos">Preços</a>
+                <a class="text-[14px] hover:text-blue-400 transition-colors font-medium text-white/70 tracking-wide"
+                    href="#faq">FAQ</a>
             </div>
-
-            <div class="flex gap-x-4 items-center">
-                <a class="hidden md:flex group transition-all duration-300 hover:bg-blue-500/10 hover:border-blue-400 hover:shadow-[0_0_35px_rgba(59,130,246,0.6),inset_0_0_20px_rgba(59,130,246,0.4)] hover:scale-[1.02] items-center justify-center bg-black/60 border-blue-500 border rounded-full px-6 py-2.5 shadow-[0_0_20px_rgba(59,130,246,0.5),inset_0_0_10px_rgba(59,130,246,0.2)]" href="https://pagacerto.parceiroapp.com.br">
-                    <span class="uppercase text-[12px] transition-colors group-hover:text-white font-semibold text-white/90 tracking-tight font-sans z-10 relative">ENTRAR</span>
+            <div class="flex gap-4 items-center">
+                <a class="nav-desktop-only md:flex group transition-all duration-300 hover:bg-blue-500/10 hover:border-blue-400 hover:shadow-[0_0_35px_rgba(59,130,246,0.6),inset_0_0_20px_rgba(59,130,246,0.4)] hover:scale-[1.02] items-center justify-center bg-black/60 border-blue-500 border rounded-full px-6 py-2"
+                    href="https://pagacerto.parceiroapp.com.br">
+                    <span class="text-[13px] font-semibold text-white tracking-tight uppercase">Entrar</span>
                 </a>
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-white hover:bg-white/10 rounded-full transition-colors mr-2">
+                <button id="mobile-menu-btn"
+                    class="md:hidden p-2 text-white hover:bg-white/10 rounded-full transition-colors">
                     <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
             </div>
@@ -253,11 +259,12 @@
 
     <!-- Hero Section -->
     <main class="flex flex-col z-10 pt-44 pb-24 px-6 relative items-center justify-center" id="hero">
-        <!-- Version Badge -->
-        <div class="inline-flex hover:bg-white/10 transition-colors cursor-pointer group scroll-item scroll-fade-up bg-white/5 border-white/10 border rounded-full mb-8 pt-1.5 pr-3 pb-1.5 pl-3 backdrop-blur-sm items-center" style="animation-play-state: running">
-            <span class="bg-blue-500/20 text-blue-400 rounded px-1.5 py-0.5 text-[10px] font-medium tracking-wide font-sans">V2.0</span>
-            <span class="text-xs text-gray-300 font-medium group-hover:text-white transition-colors ml-2 font-sans">IA Monetex Financeira Inteligente</span>
-            <i data-lucide="arrow-right" class="w-3 h-3 text-gray-500 group-hover:text-white transition-colors ml-2"></i>
+        <div class="inline-flex hover:bg-white/10 transition-colors cursor-pointer group scroll-item scroll-fade-up bg-white/5 border-white/10 border rounded-full mb-8 px-4 py-1.5 backdrop-blur-sm items-center"
+            style="animation-play-state: running">
+            <span
+                class="bg-blue-500/20 text-blue-400 rounded px-1.5 py-0.5 text-[10px] font-medium tracking-wide">NOVIDADE</span>
+            <span class="text-xs text-gray-300 font-medium group-hover:text-white transition-colors ml-2">Inteligência
+                Artificial Monetex v2.0</span>
         </div>
 
         <h1 class="text-center text-5xl md:text-7xl leading-[1.1] max-w-5xl mx-auto font-oswald font-light tracking-tight scroll-item scroll-blur-in delay-100"
@@ -275,19 +282,14 @@
         <div class="flex flex-col sm:flex-row gap-4 mt-12 scroll-item scroll-fade-up delay-300 items-center"
             style="animation-play-state: running">
             <!-- Primary Beam Button -->
-            <button
-                class="group inline-flex overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_40px_-10px_rgba(59,130,246,0.5)] focus:outline-none min-w-[220px] h-[54px] rounded-full relative items-center justify-center"
-                style="--border-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)); --border-radius-before: 9999px">
+            <button class="group inline-flex overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_40px_-10px_rgba(59,130,246,0.5)] focus:outline-none text-sm font-medium text-white h-[54px] rounded-full pt-4 pr-8 pb-4 pl-8 relative items-center justify-center" style="position: relative; --border-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)); --border-radius-before: 9999px">
                 <div class="absolute inset-0 -z-20 rounded-full overflow-hidden p-[1px]">
-                    <div class="absolute inset-[-100%] bg-[conic-gradient(from_0deg,transparent_0_300deg,#3b82f6_360deg)]"
-                        style="animation: beam-spin 3s linear infinite;"></div>
+                    <div class="absolute inset-[-100%] bg-[conic-gradient(from_0deg,transparent_0_300deg,#3b82f6_360deg)]" style="animation: beam-spin 3s linear infinite;"></div>
                     <div class="absolute inset-[1px] rounded-full bg-[#050505]"></div>
                 </div>
                 <div class="overflow-hidden bg-[#0A0A0A] rounded-full absolute top-[2px] right-[2px] bottom-[2px] left-[2px]">
                     <div class="bg-gradient-to-b from-blue-900/20 to-transparent absolute top-0 right-0 bottom-0 left-0"></div>
-                    <div class="opacity-[0.07] mix-blend-plus-lighter absolute top-0 right-0 bottom-0 left-0"
-                        style="background-image: repeating-linear-gradient(90deg, #fff, #fff 1px, transparent 1px, transparent 8px); background-size: 24px 100%; animation: lines-slide 1.5s linear infinite;">
-                    </div>
+                    <div class="opacity-[0.07] mix-blend-plus-lighter absolute top-0 right-0 bottom-0 left-0" style="background-image: repeating-linear-gradient(90deg, #fff, #fff 1px, transparent 1px, transparent 8px); background-size: 24px 100%; animation: lines-slide 1.5s linear infinite;"></div>
                     <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-1/2 bg-blue-500/20 blur-2xl rounded-full pointer-events-none transition-colors duration-500 group-hover:bg-blue-500/40"></div>
                 </div>
                 <span class="transition-colors group-hover:text-white uppercase font-semibold text-white/90 tracking-tight z-10 relative font-sans">Começar teste grátis</span>
@@ -295,21 +297,23 @@
             </button>
 
             <!-- Secondary Glow Button -->
-            <button
-                class="min-w-[200px] h-[54px] hover:bg-blue-500/10 hover:border-blue-400 hover:shadow-[0_0_35px_rgba(59,130,246,0.6),inset_0_0_20px_rgba(59,130,246,0.4)] hover:scale-[1.02] transition-all duration-300 flex group text-sm font-semibold text-white bg-black/60 border-blue-500 border rounded-full pt-3.5 pr-8 pb-3.5 pl-8 shadow-[0_0_20px_rgba(59,130,246,0.5),inset_0_0_10px_rgba(59,130,246,0.2)] gap-x-2 gap-y-2 items-center justify-center uppercase tracking-tight">
+            <button class="hover:bg-blue-500/10 hover:border-blue-400 hover:shadow-[0_0_35px_rgba(59,130,246,0.6),inset_0_0_20px_rgba(59,130,246,0.4)] hover:scale-[1.02] transition-all duration-300 flex group text-base font-medium text-white bg-black/60 border-blue-500 border rounded-full pt-3.5 pr-8 pb-3.5 pl-8 shadow-[0_0_20px_rgba(59,130,246,0.5),inset_0_0_10px_rgba(59,130,246,0.2)] gap-x-2 gap-y-2 items-center justify-center uppercase">
                 <i data-lucide="play-circle" class="w-4 h-4 text-blue-400 group-hover:text-blue-300 transition-colors"></i>
                 Ver como funciona
             </button>
         </div>
 
-        <!-- Desktop Window Mockup -->
-        <div class="flex scroll-item scroll-blur-in delay-500 w-full h-[600px] md:h-[800px] max-w-[1440px] mt-24 mr-auto ml-auto relative items-center justify-center" style="animation-play-state: running;">
-            <!-- Glow Effect Behind Mockup -->
-            <div class="absolute -inset-4 bg-gradient-to-r from-blue-600/20 to-indigo-600/20 rounded-[2.5rem] blur-3xl opacity-50"></div>
-            
-            <div class="flex overflow-hidden z-30 bg-[#0A0A0C] w-full h-[600px] md:h-[700px] max-w-6xl border-white/10 border ring-white/5 ring-1 rounded-2xl mr-6 ml-6 relative shadow-2xl font-sans text-gray-400 select-none">
+        <div class="w-full max-w-6xl mt-24 scroll-item scroll-blur-in delay-500 relative">
+            <div
+                class="absolute -inset-4 bg-gradient-to-r from-blue-600/20 to-indigo-600/20 rounded-[2.5rem] blur-3xl opacity-50">
+            </div>
+
+            <div
+                class="relative bg-[#0A0A0C] border border-white/10 rounded-2xl overflow-hidden shadow-2xl flex flex-col md:flex-row h-[600px] md:h-[700px]">
+
                 <!-- Sidebar Mockup -->
-                <aside id="main-sidebar" class="w-64 border-r border-white/5 bg-[#0A0A0C] flex flex-col hidden md:flex">
+                <aside id="main-sidebar"
+                    class="absolute md:relative inset-y-0 left-0 w-64 border-r border-white/5 bg-[#0A0A0C] z-[150] md:flex flex-col p-6 shrink-0 transition-transform duration-300 -translate-x-full md:translate-x-0">
                     <div class="flex items-center gap-3 mb-10">
                         <img src="assets/logo-monetex-CVRVr5hK_dec5b0863654.png" alt="Monetex"
                             class="h-6 w-auto brightness-200">
